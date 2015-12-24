@@ -19,7 +19,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     MianViewController *main = [[MianViewController alloc]init];
-    self.window.rootViewController = main;
+    
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:main];
+    
+    
+    self.window.rootViewController = nav;
     // Override point for customization after application launch.
     return YES;
 }
