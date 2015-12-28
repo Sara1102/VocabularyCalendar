@@ -32,7 +32,7 @@
     
     NSDateFormatter  *dateformatter=[[NSDateFormatter alloc] init];
     
-    [dateformatter setDateFormat:@"YYYY-MM-dd"];
+    [dateformatter setDateFormat:@"yyyy-MM-dd"];
     
     NSString *  locationString=[dateformatter stringFromDate:senddate];
     
