@@ -8,10 +8,12 @@
 
 #import "MianViewController.h"
 #import "ReviewViewController.h"
+#import "EditDayOfReviewVC.h"
 
 @interface MianViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *reviewTitleTextField;
-@property (weak, nonatomic) IBOutlet UITextField *reviewDayTextField;
+@property (weak, nonatomic) IBOutlet UILabel *reviewDayLabel;
+
 @property (weak, nonatomic) IBOutlet UITextField *recitedDateTextField;
 @property (strong, nonatomic) IBOutlet UIDatePicker *datePicker;
 
@@ -65,10 +67,7 @@
     
 }
 
-- (IBAction)makeSureDays:(id)sender {
-    
-    [self.reviewDayTextField resignFirstResponder];
-}
+
 
 
 - (IBAction)toSubmit:(id)sender {
@@ -107,12 +106,24 @@
     review.store = self.store;
     [self.navigationController pushViewController:review animated:YES];
 }
+///编辑复习周期的具体时间
+- (IBAction)toEditTheDaysOfReview:(id)sender {
+    
+    EditDayOfReviewVC *editDayOfReviewVC = [[EditDayOfReviewVC alloc]initWithNibName:@"EditDayOfReviewVC" bundle:nil];
+    NSArray *dateArray = [self.reviewDayLabel.text componentsSeparatedByString:@"."];
+    editDayOfReviewVC.dayArray = [NSMutableArray arrayWithArray:dateArray] ;
+    [self.navigationController pushViewController:editDayOfReviewVC animated:YES];
+}
+
+
+
+
 #pragma mark Event
 
 -(void)setEvent
 {
-    if (self.reviewTitleTextField.text.length > 0) {
-        NSArray *dateArray = [self.reviewDayTextField.text componentsSeparatedByString:@"."];
+    if (self.reviewDayLabel.text.length > 0) {
+        NSArray *dateArray = [self.reviewDayLabel.text componentsSeparatedByString:@"."];
         
         for (NSString *dateString in dateArray ) {
             if ([dateString isKindOfClass:[NSString class]]) {

@@ -19,6 +19,8 @@
 		E32EB3E11C22A3DC00ABC393 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E32EB3E01C22A3DC00ABC393 /* EventKitUI.framework */; };
 		E32EB3F51C2C085D00ABC393 /* ReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E32EB3F31C2C085D00ABC393 /* ReviewViewController.m */; settings = {ASSET_TAGS = (); }; };
 		E32EB3F61C2C085D00ABC393 /* ReviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E32EB3F41C2C085D00ABC393 /* ReviewViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		E380F6A61C3A75F800087700 /* EditDayOfReviewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E380F6A41C3A75F800087700 /* EditDayOfReviewVC.m */; settings = {ASSET_TAGS = (); }; };
+		E380F6A71C3A75F800087700 /* EditDayOfReviewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E380F6A51C3A75F800087700 /* EditDayOfReviewVC.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,9 @@
 		E32EB3F21C2C085D00ABC393 /* ReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReviewViewController.h; path = viewController/ReviewViewController.h; sourceTree = "<group>"; };
 		E32EB3F31C2C085D00ABC393 /* ReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReviewViewController.m; path = viewController/ReviewViewController.m; sourceTree = "<group>"; };
 		E32EB3F41C2C085D00ABC393 /* ReviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ReviewViewController.xib; path = viewController/ReviewViewController.xib; sourceTree = "<group>"; };
+		E380F6A31C3A75F800087700 /* EditDayOfReviewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditDayOfReviewVC.h; path = viewController/EditDayOfReviewVC.h; sourceTree = "<group>"; };
+		E380F6A41C3A75F800087700 /* EditDayOfReviewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditDayOfReviewVC.m; path = viewController/EditDayOfReviewVC.m; sourceTree = "<group>"; };
+		E380F6A51C3A75F800087700 /* EditDayOfReviewVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EditDayOfReviewVC.xib; path = viewController/EditDayOfReviewVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +112,9 @@
 				E32EB3F21C2C085D00ABC393 /* ReviewViewController.h */,
 				E32EB3F31C2C085D00ABC393 /* ReviewViewController.m */,
 				E32EB3F41C2C085D00ABC393 /* ReviewViewController.xib */,
+				E380F6A31C3A75F800087700 /* EditDayOfReviewVC.h */,
+				E380F6A41C3A75F800087700 /* EditDayOfReviewVC.m */,
+				E380F6A51C3A75F800087700 /* EditDayOfReviewVC.xib */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -173,6 +181,7 @@
 				E32EB3CE1C229F9200ABC393 /* Assets.xcassets in Resources */,
 				E32EB3F61C2C085D00ABC393 /* ReviewViewController.xib in Resources */,
 				E32EB3CC1C229F9200ABC393 /* Main.storyboard in Resources */,
+				E380F6A71C3A75F800087700 /* EditDayOfReviewVC.xib in Resources */,
 				E32EB3DD1C229FE200ABC393 /* MianViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E380F6A61C3A75F800087700 /* EditDayOfReviewVC.m in Sources */,
 				E32EB3F51C2C085D00ABC393 /* ReviewViewController.m in Sources */,
 				E32EB3C91C229F9200ABC393 /* ViewController.m in Sources */,
 				E32EB3C61C229F9200ABC393 /* AppDelegate.m in Sources */,
