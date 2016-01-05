@@ -73,7 +73,11 @@
 #pragma mark todo
 -(void)addDay:(UIBarButtonItem *)barItem
 {
-    UIAlertController *alertCon = [UIAlertController alertControllerWithTitle:@"没有同意使用日历，就不能使本软件" message:nil preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alertCon = [UIAlertController alertControllerWithTitle:@"添加复习周期" message:nil preferredStyle:UIAlertControllerStyleAlert];
+    [alertCon addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        
+        textField.keyboardType = UIKeyboardTypeNumberPad;
+    }];
     //[weakSelf presentViewController:alertCon animated:YES completion:nil];
 }
 
