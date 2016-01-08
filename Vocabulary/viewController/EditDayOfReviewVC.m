@@ -78,7 +78,7 @@
         
         textField.keyboardType = UIKeyboardTypeNumberPad;
     }];
-    //[weakSelf presentViewController:alertCon animated:YES completion:nil];
+    [self presentViewController:alertCon animated:YES completion:nil];
 }
 
 
